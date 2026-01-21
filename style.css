@@ -1,6 +1,3 @@
-html {
-    font-size : 10.5px;
-}
 * {
     box-sizing : border-box;
 }
@@ -71,7 +68,13 @@ html {
     --color_shop_rgb: 152, 88, 245;
 
 }
-html, body, form {
+html, body {
+    font-size : 10.5px;
+    line-height : 10.5px;
+    padding : 0;
+    margin : 0;
+}
+form, ul {
     margin : 0;
     padding : 0;
 }
@@ -231,6 +234,111 @@ html, body, form {
     background-position : -457px -411px;
     width : 10px;
     height : 6px;
+}
+#nav {
+    margin-top : 8px;
+    margin-left : 20px;
+}
+#nav > ul {
+    display : inline-flex;
+    list-style-type : none;
+    font-size : 1.4rem;
+    line-height : 20px;
+}
+#nav li a {
+    justify-content : center;
+    width : 54px;
+    height : 68px;
+    display : block;
+    text-decoration : none;
+}
+#nav #ad a {
+    display : flex;
+    justify-content : center;
+    width : 97px;
+    height : 68px;
+
+}
+#nav a:visited {
+    color : black;
+}
+#nav div {
+    display : inline-flex;
+    justify-content : center;
+    position : relative;
+    text-align : center;
+}
+#nav div::after, #nav div img {
+    content : "";
+    background-image : url(./sp_main.png);
+    background-size : 468px 457px;
+    width : 40px;
+    height : 40px;
+    display : inline-flex;
+    justify-content : center;
+    position : relative;
+    z-index : 1;
+    margin : 2px;
+}
+#nav div::before {
+    content: "";
+    display: inline-flex;
+    justify-content : center;    
+    position: absolute;
+    background-image: url(https://pm.pstatic.net/resources/asset/sp_main.3427b960.png);
+    background-size: 468px 457px;
+    background-position: -153px -142px;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+}
+#nav span {
+    display : inline-flex;
+    justify-content : center;
+    width : 54px;
+    height : 20px;
+    margin : 4px 0 0;
+    font-family: -apple-system, BlinkMacSystemFont, 
+    "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
+}
+#nav li:nth-of-type(1) div::after {
+    background-position : -205px -219px;
+}
+#nav li:nth-of-type(2) div::after {
+    background-position : -41px -219px;
+}
+#nav li:nth-of-type(3) div::after {
+    background-position : 0 -219px;
+}
+#nav li:nth-of-type(4) div::after {
+    background-position : -41px -260px;
+}
+#nav li:nth-of-type(5) div::after {
+    background-position : -270px -205px;
+}
+#nav li:nth-of-type(6) div::after {
+    background-position : -123px -260px;
+}
+#nav li:nth-of-type(7) div::after {
+    background-position : 0 -260px;
+}
+#nav li:nth-of-type(8) div::after {
+    background-position : -270px 0;
+}
+#nav li:nth-of-type(9) div::after {
+    background-position : -164px -260px;
+}
+#nav li:nth-of-type(10) div::after {
+    display : none;
+}
+#nav li:nth-of-type(10) div img {
+    background : none;
+}
+#nav li:nth-of-type(11) div::after {
+    background-position : -270px -123px;
+}
+#nav li:nth-of-type(12) div::after {
+    background-position : -164px -217px;
 }
 #main {
     height : 2000px;
