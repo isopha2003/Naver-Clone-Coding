@@ -237,7 +237,6 @@ form, ul {
 }
 #nav {
     margin-top : 8px;
-    margin-left : 20px;
 }
 #nav > ul {
     display : inline-flex;
@@ -247,7 +246,7 @@ form, ul {
 }
 #nav li a {
     justify-content : center;
-    width : 54px;
+    width : 61px;
     height : 68px;
     display : block;
     text-decoration : none;
@@ -257,7 +256,6 @@ form, ul {
     justify-content : center;
     width : 97px;
     height : 68px;
-
 }
 #nav a:visited {
     color : black;
@@ -273,12 +271,18 @@ form, ul {
     background-image : url(./sp_main.png);
     background-size : 468px 457px;
     width : 40px;
-    height : 40px;
-    display : inline-flex;
+    height : 36px;
+    display : block;
     justify-content : center;
     position : relative;
     z-index : 1;
     margin : 2px;
+}
+#nav div img {
+    width : 40px;
+    height : 40px;
+    margin-top : 2px;
+    display : block;
 }
 #nav div::before {
     content: "";
@@ -291,15 +295,43 @@ form, ul {
     background-repeat: no-repeat;
     width: 50px;
     height: 50px;
+    margin-top : -1px;
 }
 #nav span {
+    position : relative;
     display : inline-flex;
     justify-content : center;
-    width : 54px;
+    width : 61px;
     height : 20px;
-    margin : 4px 0 0;
+    letter-spacing : -0.4px;
+    font-size : 1.3rem;
+    font-weight : 500;
+    line-height : 20px;
+    color : #2e2e2e;
+    margin : 6px 0px 0px;
     font-family: -apple-system, BlinkMacSystemFont, 
     "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
+}
+#nav li {
+    position : relative;
+}
+#nav li:nth-of-type(1) {
+    left : -1px;
+}
+#nav li:nth-of-type(2) {
+    left : -1px;
+}
+#nav li:nth-of-type(3) {
+    left : -1px;
+}
+#nav li:nth-of-type(9) {
+    left : 1px;
+}
+#nav li:nth-of-type(10) {
+    left : 1px;
+}
+#nav li:nth-of-type(11) {
+    left : 1px;
 }
 #nav li:nth-of-type(1) div::after {
     background-position : -205px -219px;
@@ -334,12 +366,16 @@ form, ul {
 #nav li:nth-of-type(10) div img {
     background : none;
 }
+#nav li:nth-of-type(10) span {
+    margin : 2px 0px 0px;
+}
 #nav li:nth-of-type(11) div::after {
-    background-position : -270px -123px;
+    background-position : -270px -164px;
 }
 #nav li:nth-of-type(12) div::after {
     background-position : -164px -217px;
 }
+
 #main {
     height : 2000px;
 }
